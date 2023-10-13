@@ -1,0 +1,83 @@
+<!DOCTYPE html>
+<html lang="ar" dir="rtl">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>قائمة مهامّ</title>
+    <link rel="stylesheet" href="../css/main-rtl.css">
+    <link rel="icon" href="../images/svg/logo.svg" type="image/svg">
+</head>
+
+<body>
+    <header class="header">
+        <div class="header__container container">
+            <img class="header__logo" src="../images/svg/logo.svg" width="75" height="75" alt="logo">
+            <a class="header__lang" href="../index.html">English</a>
+        </div>
+    </header>
+    
+    <main class="main">
+        <div class="container">
+            <div class="card">
+                <div class="date">
+                    <div class="date__today">
+                        <p class="date__day">١٢</p>
+                        <div>
+                            <p class="date__month">اكتوبر</p>
+                            <p class="date__year">٢٠٢٣</p>
+                        </div>
+                    </div>
+                    <div class="date__day-name">الأربعاء</div>
+                </div>
+    
+                <ul class="todo-list">
+                    <li class="todo-list__item">
+                        <p class="todo-list__txt todo-list__txt--active">اشتري بعض الملابس</p>
+                        <button class="todo-list__check-btn btn btn--sm btn--circle todo-list__check-btn--active">
+                            <i class="fas fa-check"></i>
+                        </button>
+                    </li>
+    
+                    <li class="todo-list__item">
+                        <p class="todo-list__txt todo-list__txt--active">اقرأ مقال</p>
+                        <button class="todo-list__check-btn btn btn--sm btn--circle todo-list__check-btn--active">
+                            <i class="fas fa-check"></i>
+                        </button>
+                    </li>
+    
+                    <li class="todo-list__item">
+                        <p class="todo-list__txt">حاول عدم الوقوع في النوم</p>
+                        <button class="todo-list__check-btn btn btn--sm btn--circle btn--border-gray"></button>
+                    </li>
+    
+                    <li class="todo-list__item">
+                        <p class="todo-list__txt">شاهد فيلم "تيتانيك"</p>
+                        <button class="todo-list__check-btn btn btn--sm btn--circle btn--border-gray"></button>
+                    </li>
+    
+                    <li class="todo-list__item">
+                        <p class="todo-list__txt">قم بتمشيه الكلب</p>
+                        <button class="todo-list__check-btn btn btn--sm btn--circle btn--border-gray"></button>
+                    </li>
+    
+                    <li class="todo-list__item">
+                        <p class="todo-list__txt">اشتري بعض اللبن</p>
+                        <button class="todo-list__check-btn btn btn--sm btn--circle btn--border-gray"></button>
+                    </li>
+    
+                    <li class="todo-list__item">
+                        <p class="todo-list__txt">إرسل بريد الكتروني الي إلون ماسك</p>
+                        <button class="todo-list__check-btn btn btn--sm btn--circle btn--border-gray"></button>
+                    </li>
+                </ul>
+    
+                <button class="card__add-btn btn btn--md btn--primary btn--circle">
+                    <i class="fas fa-plus"></i>
+                </button>
+            </div>
+        </div>
+    </main>
+</body>
+
+</html>

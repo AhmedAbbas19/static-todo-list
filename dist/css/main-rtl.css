@@ -1,0 +1,171 @@
+@import url(../../node_modules/@fortawesome/fontawesome-free/css/all.css);
+@font-face {
+  font-family: 'BPReplay Regular';
+  font-style: normal;
+  font-weight: 400;
+  src: url("../fonts/bpreplay-webfont.woff") format("woff"); }
+
+@font-face {
+  font-family: 'Noto Kufi Arabic';
+  font-style: normal;
+  font-weight: 400;
+  src: url("../fonts/NotoKufiArabic-Regular.woff2") format("woff2"), url("../fonts/NotoKufiArabic-Regular.woff") format("woff"); }
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box; }
+
+html {
+  font-size: 16px; }
+
+body {
+  font-family: "Noto Kufi Arabic", "Noto Kufi Arabic Bold", "BPReplay Regular", Helvetica, Arial, sans-serif;
+  background-color: #f0efe9;
+  color: #595959;
+  line-height: 1.5; }
+
+a,
+a:hover,
+a:visited,
+a:active {
+  text-decoration: unset; }
+
+ul {
+  list-style: none; }
+
+button {
+  padding: 0;
+  margin: 0;
+  border: none;
+  background: none; }
+  button:focus {
+    outline: none; }
+
+.container {
+  max-width: 1040px;
+  margin: 0 auto;
+  padding: 0 20px; }
+
+.text-monochrome-100 {
+  color: #ffffff; }
+
+.text-monochrome-200 {
+  color: #f0efe9; }
+
+.text-monochrome-300 {
+  color: #d8d8d8; }
+
+.text-monochrome-400 {
+  color: #7e7e7e; }
+
+.text-monochrome-500 {
+  color: #262626; }
+
+.text-monochrome-600 {
+  color: #595959; }
+
+.text-primary-100 {
+  color: #50E4A5; }
+
+.text-primary-200 {
+  color: #01b0ac; }
+
+.btn {
+  display: inline-block;
+  cursor: pointer;
+  transition: all 0.3s ease;
+  color: #50E4A5; }
+  .btn--sm {
+    min-width: 30px;
+    min-height: 30px; }
+  .btn--md {
+    min-width: 84px;
+    min-height: 84px;
+    font-size: 1.5rem; }
+  .btn--circle {
+    border-radius: 50%; }
+  .btn--primary {
+    background-color: #50E4A5;
+    color: #01b0ac; }
+    .btn--primary:hover {
+      background-color: #01b0ac;
+      color: #ffffff; }
+  .btn--border-primary, .todo-list__check-btn--active {
+    border: 3px solid #50E4A5; }
+    .btn--border-primary:hover, .todo-list__check-btn--active:hover {
+      border-color: #01b0ac; }
+  .btn--border-gray {
+    border: 3px solid #d8d8d8;
+    color: #d8d8d8; }
+    .btn--border-gray:hover {
+      border-color: #50E4A5;
+      color: #50E4A5; }
+
+.card {
+  position: relative;
+  background-color: #ffffff;
+  box-shadow: 1px 1px 6px 0px #d8d8d8;
+  padding: 50px 40px 100px;
+  margin: 32px 0 100px;
+  width: 360px; }
+  @media (max-width: 399.98px) {
+    .card {
+      width: 100%; } }
+  .card__add-btn {
+    position: absolute;
+    left: 50%;
+    bottom: 0;
+    transform: translate(-42px, 42px); }
+
+.date {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: space-between;
+  margin-bottom: 50px; }
+  .date__today {
+    display: flex;
+    flex-direction: row;
+    align-items: center; }
+  .date__day {
+    font-size: 2.5rem;
+    margin-left: 10px; }
+  .date__year {
+    color: #7e7e7e; }
+
+.todo-list {
+  display: flex;
+  flex-direction: column;
+  gap: 32px; }
+  .todo-list__item {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: space-between; }
+  .todo-list__txt {
+    margin-left: 20px; }
+    .todo-list__txt--active {
+      color: #d8d8d8; }
+
+.header {
+  background-color: #01b0ac;
+  box-shadow: 0px 0px 8px 3px #7e7e7e; }
+  .header__container {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: space-between; }
+  .header__lang {
+    font-family: "BPReplay Regular";
+    color: #ffffff;
+    transition: all 0.3s ease; }
+    .header__lang:hover {
+      color: #50E4A5; }
+
+.main {
+  min-height: calc(100vh - 75px);
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: center; }

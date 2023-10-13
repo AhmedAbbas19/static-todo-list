@@ -1,0 +1,16 @@
+{
+  "name": "todo-list-rtl-ltr",
+  "version": "1.0.0",
+  "description": "Static todo list using html, scss",
+  "main": "index.js",
+  "scripts": {
+    "sass": "node-sass src/sass -o dist/css",
+    "sass:watch": "npm run sass -- -w"
+  },
+  "author": "Ahmed Abbas",
+  "license": "ISC",
+  "devDependencies": {
+    "@fortawesome/fontawesome-free": "^6.4.2",
+    "node-sass": "^4.14.0"
+  }
+}
